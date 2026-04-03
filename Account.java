@@ -1,0 +1,11 @@
+class Account {
+    private int balance;
+
+    public void setBalance(int b) {
+        balance = b;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+}
