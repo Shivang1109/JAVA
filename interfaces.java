@@ -1,8 +1,8 @@
-import org.w3c.dom.ls.LSOutput;
+
 
 public class interfaces {
     static void main(String[] args) {
-        Smartphones phone=new Smartphones();
+        Smartphone phone=new Smartphone();
         phone.takepic();
         phone.playmusic();
         phone.makecall();
@@ -17,7 +17,7 @@ interface MusicPlayer{
 interface Phone{
     void makecall();
 }
-class Smartphones implements Camera, MusicPlayer, Phone{
+class Smartphone implements Camera, MusicPlayer, Phone{
     @Override
     public void takepic() {
         System.out.println("Taking pic..");
@@ -30,6 +30,8 @@ class Smartphones implements Camera, MusicPlayer, Phone{
 
     @Override
     public void playmusic() {
-
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'playmusic'");
     }
+
 }
