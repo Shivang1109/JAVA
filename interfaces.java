@@ -2,7 +2,7 @@ import org.w3c.dom.ls.LSOutput;
 
 public class interfaces {
     static void main(String[] args) {
-        Smartphone phone=new Smartphone();
+        Smartphones phone=new Smartphones();
         phone.takepic();
         phone.playmusic();
         phone.makecall();
@@ -17,7 +17,7 @@ interface MusicPlayer{
 interface Phone{
     void makecall();
 }
-class Smartphone implements Camera, MusicPlayer, Phone{
+class Smartphones implements Camera, MusicPlayer, Phone{
     @Override
     public void takepic() {
         System.out.println("Taking pic..");
@@ -28,4 +28,8 @@ class Smartphone implements Camera, MusicPlayer, Phone{
         System.out.println("Making Call");
     }
 
+    @Override
+    public void playmusic() {
+
+    }
 }

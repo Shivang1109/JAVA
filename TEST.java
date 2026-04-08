@@ -6,6 +6,10 @@ class Animal{
     void walk(){
         System.out.println("Walking");
     }
+    public void sound() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'sound'");
+    }
 }
 class Dog extends Animal{
 
